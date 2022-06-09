@@ -1,0 +1,121 @@
+body{
+    background-color: rgb(117,132,146);
+    color: #292e33;
+}
+
+/* main */
+.main{
+    position: relative;
+    width: 100%;
+    background-color: rgba(117,132,146, 0.4);
+}
+.main-v{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -100;
+    
+}
+.main-title{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    z-index: 2;
+}
+.main-title > h1{
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    text-shadow:2px 2px 0 #918174, -2px -2px 0 #918174,
+    -2px 2px 0 #918174, 2px -2px 0 #918174,
+    0px 2px 0 #918174,  0 -2px 0 #918174,
+    -2px 0 0 #918174, 2px 0 0 #918174;
+}
+
+/* hoop */
+.hoop{
+    width: 1200px;
+    max-width: 100%;
+    margin: 120px auto;
+    padding: 0 4%;
+}
+h2{
+    font-size: 30px;
+    text-shadow:1px 1px 0 #918174, -1px -1px 0 #918174,
+    -1px 1px 0 #918174, 1px -1px 0 #918174,
+    0px 1px 0 #918174,  0 -1px 0 #918174,
+    -1px 0 0 #918174, 1px 0 0 #918174;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+.hoop > div{
+    display: flex;
+    justify-content: space-between;
+}
+.yosi,.fuzi,.iwaki{
+    width: 32%;
+}
+.hoop-img-area{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.hoop-img-area > a{
+    display: inline-block;
+}
+img{
+    width: 100%;
+    height: auto;
+    /* object-fit: cover; */
+    /* vertical-align: top; */
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.hoop-text-area{
+    border-left: 4px solid #918174;
+    color: #292e33;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+span{
+    font-size: 14px;
+}
+h3{
+    font-size: 20px;
+    font-weight: 100;
+}
+/* footer */
+.footer{
+    background-color: #918174;
+    color: #292e33;
+    font-size: 12px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 896px) {
+    /* hoop */
+    .hoop{
+        margin: 80px auto;
+    }
+    h2{
+        margin-bottom: 40px;
+    }
+    .hoop > div{
+        display: block;
+    }
+    .yosi,.fuzi,.iwaki{
+        width: 100%;
+    }
+    .hoop-text-area{
+        margin: 0 0 30px 0;
+    }
+}
